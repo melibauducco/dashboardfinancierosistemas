@@ -11,6 +11,7 @@ import { CategoryBarChart } from './components/CategoryBarChart';
 import { DonutChart } from './components/DonutChart';
 import { ChannelBarChart } from './components/ChannelBarChart';
 import { TransactionsTable } from './components/TransactionsTable';
+import { ChatWidget } from './components/ChatWidget';
 
 import './App.css';
 
@@ -224,6 +225,9 @@ function App() {
 
         <TransactionsTable data={filteredData} />
       </div>
+
+      {/* Chat Widget flotante */}
+      <ChatWidget />
     </div>
   );
 }
