@@ -1,0 +1,182 @@
+.table-container {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.table-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0 0 1rem 0;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.transactions-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+}
+
+.transactions-table th {
+    background: var(--bg-primary);
+    color: var(--text-secondary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+    padding: 0.85rem 1rem;
+    text-align: left;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background 0.2s;
+}
+
+.transactions-table th:hover {
+    background: rgba(99, 102, 241, 0.1);
+}
+
+.sort-icon {
+    margin-left: 0.35rem;
+    color: var(--accent-primary);
+}
+
+.transactions-table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-primary);
+}
+
+.transactions-table tbody tr {
+    transition: background 0.2s;
+}
+
+.transactions-table tbody tr:hover {
+    background: rgba(99, 102, 241, 0.05);
+}
+
+.row-real {
+    background: rgba(168, 85, 247, 0.03);
+}
+
+.row-mes {
+    background: transparent;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.65rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.badge-mes {
+    background: rgba(99, 102, 241, 0.2);
+    color: rgb(99, 102, 241);
+}
+
+.badge-real {
+    background: rgba(168, 85, 247, 0.2);
+    color: rgb(168, 85, 247);
+}
+
+.importe-positivo {
+    color: #10b981;
+    font-weight: 600;
+}
+
+.importe-negativo {
+    color: #ef4444;
+    font-weight: 600;
+}
+
+.descripcion-cell {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.badge-desvio {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.25rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: var(--radius-sm);
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.desvio-positivo {
+    background: rgba(16, 185, 129, 0.15);
+    color: #10b981;
+}
+
+.desvio-negativo {
+    background: rgba(239, 68, 68, 0.15);
+    color: #ef4444;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.pagination-btn {
+    padding: 0.5rem 0.85rem;
+    background: var(--bg-primary);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 0.85rem;
+}
+
+.pagination-btn:hover:not(:disabled) {
+    background: rgba(99, 102, 241, 0.15);
+    border-color: var(--accent-primary);
+}
+
+.pagination-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.pagination-info {
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+    .table-container {
+        padding: 1rem;
+    }
+
+    .transactions-table {
+        font-size: 0.8rem;
+    }
+
+    .transactions-table th,
+    .transactions-table td {
+        padding: 0.6rem 0.5rem;
+    }
+
+    .pagination {
+        flex-wrap: wrap;
+    }
+}

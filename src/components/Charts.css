@@ -1,0 +1,27 @@
+.chart-container {
+    background: var(--card-bg);
+    border-radius: var(--radius-lg);
+    border: 1px solid var(--border-color);
+    padding: 1.5rem;
+    height: 350px;
+    position: relative;
+}
+
+.chart-container--donut {
+    height: 350px;
+}
+
+.chart-container--horizontal {
+    height: 300px;
+}
+
+@media (max-width: 768px) {
+    .chart-container {
+        height: 300px;
+        padding: 1rem;
+    }
+
+    .chart-container--horizontal {
+        height: 250px;
+    }
+}
